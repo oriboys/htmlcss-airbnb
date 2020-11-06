@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* se non inserisco z-index nell'intestazione quando scrollo prende l'ombreggiatura del layover */
+.intestazione{
+  width: 100%;
+  height: 80px;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 22;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgb(39, 174, 198);
+  position: fixed;
+  margin-top: 0;
+  z-index: 1;
+}
+
+
+.logo{
+  height: 80px;
+  vertical-align: middle;
+}
+/* esercizio svolto con vh e vw */
+/* sezione del container */
+.container{
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+ .box{
+  width: 100vw;
+  height: 100vh;
+}
+
+/* bisogna mettere position relative qui perché è il padre di h2 */
+.box .layover{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* se passo sopra layover scompare l'ombreggiatura */
+.box:hover .layover{
+  background-color: rgba(0, 0, 0, 0);
+  }
+
+
+.layover h2{
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 3px 3px rgb(26, 185, 195);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+
+/* immagini */
+#Tokyo{
+  background-image: url(https://static2-viaggi.corriereobjects.it/wp-content/uploads/2015/06/tokyo-1080x720.jpg?v=134510);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#roma{
+  background-image: url(https://images.musement.com/cover/0002/37/top-view-of-rome-city-skyline-from-castel-sant-angelo-jpg_header-136539.jpeg?q=50&fit=crop&auto=format&w=1024&h=400);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#parigi{
+  background-image: url(https://cdn.marcopolo.tv/960x480/media/post/u7qusvg/parigi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
