@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.intestazione{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: rgb(39, 174, 198);
+  position: fixed;
+}
+
+.logo{
+  height: 20px;
+  vertical-align: middle;
+}
+
+.container{
+  width: 1200px;
+  height: 1800px;;
+  margin: 0 auto;
+
+}
+
+.box{
+  width: 100%;
+  height: 33%;
+}
+
+
+
+
+
+/* immagini */
+#Tokyo{
+  background-image: url(https://static2-viaggi.corriereobjects.it/wp-content/uploads/2015/06/tokyo-1080x720.jpg?v=134510);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#roma{
+  background-image: url(https://images.musement.com/cover/0002/37/top-view-of-rome-city-skyline-from-castel-sant-angelo-jpg_header-136539.jpeg?q=50&fit=crop&auto=format&w=1024&h=400);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#parigi{
+  background-image: url(https://cdn.marcopolo.tv/960x480/media/post/u7qusvg/parigi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
