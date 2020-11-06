@@ -3,29 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* se non inserisco z-index nell'intestazione quando scrollo prende l'ombreggiatura del layover */
 .intestazione{
   width: 100%;
-  height: 40px;
+  height: 80px;
   text-align: center;
   background-color: rgb(39, 174, 198);
   position: fixed;
+  margin-top: 0;
+  z-index: 1;
 }
 
+
 .logo{
-  height: 20px;
+  height: 80px;
   vertical-align: middle;
 }
 
 .container{
   width: 1200px;
-  height: 1800px;;
+  height: 1800px;
   margin: 0 auto;
-
 }
 
-.box{
+ .box{
   width: 100%;
   height: 33%;
+}
+
+.box .layover{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.box:hover .layover{
+  background-color: rgba(0, 0, 0, 0);
+  }
+
+
+h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 
