@@ -8,6 +8,9 @@
 .intestazione{
   width: 100%;
   height: 80px;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 22;
+  font-weight: 700;
   text-align: center;
   background-color: rgb(39, 174, 198);
   position: fixed;
@@ -21,6 +24,7 @@
   vertical-align: middle;
 }
 
+/* sezione del container */
 .container{
   width: 1200px;
   height: 1800px;
@@ -32,6 +36,7 @@
   height: 33%;
 }
 
+/* bisogna mettere position relative qui perché è il padre di h2 */
 .box .layover{
   width: 100%;
   height: 100%;
@@ -39,12 +44,15 @@
   position: relative;
 }
 
+/* se passo sopra layover scompare l'ombreggiatura */
 .box:hover .layover{
   background-color: rgba(0, 0, 0, 0);
   }
 
 
-h2{
+.layover h2{
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 3px 3px rgb(26, 185, 195);
   position: absolute;
   top: 50%;
   left: 50%;
